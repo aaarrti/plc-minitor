@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 1s                    # How frequently to scrape targets by default
+
+scrape_configs:
+  - job_name: 'plc_monitor_v2'           # The job name is assigned to scraped metrics by default.
+    metrics_path: '/metrics'             # The HTTP resource path on which to fetch metrics from targets.
+    static_configs:                      # A static_config allows specifying a list of targets and a common label set for them
+      - targets: ['plc-monitor-v2:8082']

@@ -1,0 +1,11 @@
+apiVersion: 1
+
+datasources:
+  - name: PLC_Handler
+    type: prometheus
+    url: http://prometheus:9090
+    isDefault: true
+    basicAuth: false
+    access: proxy
+    jsonData:
+

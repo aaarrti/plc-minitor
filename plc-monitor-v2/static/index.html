@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PLC Simulation</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+    <link rel="stylesheet" href="ui/css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/wind.png">
+</head>
+<body>
+<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+    enabled. Please enable Javascript and reload this page!</h2></noscript>
+
+<div id="main-content">
+    <h1>PLC Wind Speed Simulator</h1>
+    <div class="row">
+        <p> This simulator retrieves real windspeed data and sends them to the windturbine (PLC runtime).
+            It retrieves real data from <abbr title="Deutscher Wetterdienst">DWD</abbr> weather stations in Germany.
+            Once started, the simulator sends the (hourly recorded) wind speed in the interval set by the user to the
+            windturbine.
+        <ol>
+            <li>Fill out the form</li>
+            <li>Choose a weather station from the map</li>
+            <li>Click 'Start Simulation' button</li>
+            <li>The map will disapear. Watch the server communication!</li>
+        </ol>
+        </p>
+    </div>
+    <form id="form">
+        <h2>Simulation</h2>
+        <div class="row">
+            <div class="col">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="">From</span>
+                    </div>
+                    <input type="date" id="datefrom" class="form-control" required/><span class="validity"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="">Until</span>
+                    </div>
+                    <input type="date" id="dateto" class="form-control" required/><span class="validity"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <input type="number" class="form-control" id="interval" placeholder="Interval in s..."
+                           aria-label="Interval (s)" value="10" min="5" required>
+                    <div class="input-group-append">
+                        <span class="input-group-text">Interval (s)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Selected Station:
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="stationid_selected" disabled="disabled" required><span
+                        class="validity"></span>
+                    <div class="input-group-append">
+                        <span class="input-group-text">ID</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="stationname_selected" disabled="disabled">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Name</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="mapdiv">
+            <label for="map">Available Stations</label>
+            <div id="map" class="form-control"></div>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-primary btn-lg" id="start" disabled="disabled">Start Simulation
+            </button>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col">
+            <h1>Server Communication:</h1>
+            <div id="alert" role="alert"></div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <table id="conversation" class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Wind Speed</th>
+                    <th>Timestamp</th>
+                    <th>PLC response</th>
+                </tr>
+                </thead>
+                <tbody id="servermsg">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="text-center p-3">
+            <div class="row"><a href="https://www.dwd.de/EN/service/copyright/copyright_node.html">Copyright DWD</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script type='text/javascript' src='ui/js/map.js'></script>
+</body>
+</html>

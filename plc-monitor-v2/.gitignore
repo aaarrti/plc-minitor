@@ -1,0 +1,8 @@
+.DS_Store
+.idea
+cmake-build-*
+!include
+lib/prometheus-cpp/
+lib/oatpp
+lib/oatpp-swagger
+lib/libconfig-1.7.3

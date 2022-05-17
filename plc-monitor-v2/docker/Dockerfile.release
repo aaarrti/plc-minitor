@@ -1,0 +1,47 @@
+FROM ubuntu
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && \
+    apt-get install -y git nano g++ cmake make libspdlog-dev curl \
+    libcurl4-openssl-dev zlib1g-dev wget libboost-dev libboost-all-dev python3-pip && \
+    apt-get clean
+
+RUN pip3 install dwdweather2
+
+WORKDIR /tmp/service/
+COPY . .
+
+WORKDIR /tmp/service/lib
+# install libconfig
+RUN wget http://hyperrealm.github.io/libconfig/dist/libconfig-1.7.3.tar.gz && \
+    tar -zxvf libconfig-1.7.3.tar.gz && \
+    cd libconfig-1.7.3 && \
+    ./configure && \
+    make && \
+    make install
+# install prometheus-cpp
+RUN git clone https://github.com/jupp0r/prometheus-cpp.git && \
+    cd prometheus-cpp && \
+    git submodule init && git submodule update && \
+    mkdir _build && cd _build && \
+    cmake .. -DBUILD_SHARED_LIBS=ON && \
+    make -j 4 && \
+    mkdir -p deploy && \
+    make DESTDIR=`pwd`/deploy install
+# install oatpp++
+RUN git clone https://github.com/oatpp/oatpp && \
+    cd oatpp/ && \
+    mkdir build && cd build/ &&\
+    cmake .. && \
+    make -j 4 install
+# install swagger ui
+RUN git clone https://github.com/oatpp/oatpp-swagger && \
+    cd oatpp-swagger/ && \
+    mkdir build && cd build/ && \
+    cmake .. && \
+    make -j 4 install
+
+WORKDIR /tmp/service/build
+RUN chmod 777 .
+RUN cmake .. && make
+EXPOSE 8081
+ENTRYPOINT ["./plc_monitor_v2"]

@@ -1,0 +1,12 @@
+# for some reason in didn't work out (with '../' also)
+cmake-build-debug
+cmake-build-remote
+docker
+grafana
+prometheus
+scripts
+lib/prometheus-cpp
+Readme.md
+.gitignore
+.git
+.editorconfig

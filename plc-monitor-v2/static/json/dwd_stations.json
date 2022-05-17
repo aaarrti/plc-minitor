@@ -1,0 +1,1084 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 6.05,50.47 ]
+            },
+            "properties": {
+                "id":3,
+                "name":"Aachen",
+                "h":202,
+                "begin_series":1891
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 6.01,50.47 ]
+            },
+            "properties": {
+                "id":15000,
+                "name":"Aachen-Orsbach",
+                "h":231,
+                "begin_series":2011
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 13.59,53.01 ]
+            },
+            "properties": {
+                "id":164,
+                "name":"Angermünde",
+                "h":54,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 13.26,54.4 ]
+            },
+            "properties": {
+                "id":183,
+                "name":"Arkona",
+                "h":42,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 10.56,48.25 ]
+            },
+            "properties": {
+                "id":232,
+                "name":"Augsburg",
+                "h":462,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 10.54,49.52 ]
+            },
+            "properties": {
+                "id":282,
+                "name":"Bamberg",
+                "h":239,
+                "begin_series":1949
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 13.3,52.46 ]
+            },
+            "properties": {
+                "id":402,
+                "name":"Berlin-Dahlem (LFAG)",
+                "h":55,
+                "begin_series":1876
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 13.3,52.46 ]
+            },
+            "properties": {
+                "id":403,
+                "name":"Berlin-Dahlem (FU)",
+                "h":51,
+                "begin_series":1950
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 13.18,52.33 ]
+            },
+            "properties": {
+                "id":430,
+                "name":"Berlin-Tegel",
+                "h":36,
+                "begin_series":1963
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 13.24,52.28 ]
+            },
+            "properties": {
+                "id":433,
+                "name":"Berlin-Tempelhof",
+                "h":49,
+                "begin_series":1948
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 8.47,53.02 ]
+            },
+            "properties": {
+                "id":691,
+                "name":"Bremen",
+                "h":5,
+                "begin_series":1890
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 10.37,51.48 ]
+            },
+            "properties": {
+                "id":722,
+                "name":"Brocken",
+                "h":1142,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 14.19,51.47 ]
+            },
+            "properties": {
+                "id":880,
+                "name":"Cottbus",
+                "h":69,
+                "begin_series":1887
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 8.42,53.52 ]
+            },
+            "properties": {
+                "id":891,
+                "name":"Cuxhaven",
+                "h":5,
+                "begin_series":1946
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 13.45,51.07 ]
+            },
+            "properties": {
+                "id":1048,
+                "name":"Dresden-Klotzsche",
+                "h":227,
+                "begin_series":1967
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 6.46,51.17 ]
+            },
+            "properties": {
+                "id":1078,
+                "name":"Düsseldorf",
+                "h":37,
+                "begin_series":1969
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 7.14,53.23 ]
+            },
+            "properties": {
+                "id":5839,
+                "name":"Emden-Flugplatz",
+                "h":0,
+                "begin_series":1997
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 10.57,50.59 ]
+            },
+            "properties": {
+                "id":1270,
+                "name":"Erfurt-Weimar",
+                "h":316,
+                "begin_series":1951
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 11.03,54.31 ]
+            },
+            "properties": {
+                "id":5516,
+                "name":"Fehmarn",
+                "h":3,
+                "begin_series":1948
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 8,47.52 ]
+            },
+            "properties": {
+                "id":1346,
+                "name":"Feldberg/Schwarzwald",
+                "h":1490,
+                "begin_series":1945
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 12.57,50.25 ]
+            },
+            "properties": {
+                "id":1358,
+                "name":"Fichtelberg",
+                "h":1213,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 8.35,50.02 ]
+            },
+            "properties": {
+                "id":1420,
+                "name":"Frankfurt/Main",
+                "h":112,
+                "begin_series":1949
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 8.24,48.27 ]
+            },
+            "properties": {
+                "id":1468,
+                "name":"Freudenstadt",
+                "h":797,
+                "begin_series":1949
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 9.17,51.07 ]
+            },
+            "properties": {
+                "id":1504,
+                "name":"Fritzlar-Flugplatz",
+                "h":174,
+                "begin_series":2000
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 13.21,48.32 ]
+            },
+            "properties": {
+                "id":5856,
+                "name":"Fürstenzell",
+                "h":476,
+                "begin_series":1997
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 12.07,50.52 ]
+            },
+            "properties": {
+                "id":1612,
+                "name":"Gera-Leumnitz",
+                "h":311,
+                "begin_series":1952
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 8.39,50.36 ]
+            },
+            "properties": {
+                "id":1639,
+                "name":"Gießen/Wettenberg",
+                "h":203,
+                "begin_series":1939
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 14.57,51.09 ]
+            },
+            "properties": {
+                "id":1684,
+                "name":"Görlitz",
+                "h":238,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 13.24,54.05 ]
+            },
+            "properties": {
+                "id":1757,
+                "name":"Greifswald",
+                "h":2,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 13.08,49.06 ]
+            },
+            "properties": {
+                "id":1832,
+                "name":"Großer Arber",
+                "h":1436,
+                "begin_series":1982
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 7.15,49.56 ]
+            },
+            "properties": {
+                "id":5871,
+                "name":"Hahn",
+                "h":497,
+                "begin_series":1997
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 9.58,53.33 ]
+            },
+            "properties": {
+                "id":15526,
+                "name":"Hamburg (Deutsche Seewarte)",
+                "h":29,
+                "begin_series":1881
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 9.59,53.38 ]
+            },
+            "properties": {
+                "id":1975,
+                "name":"Hamburg-Fuhlsbüttel",
+                "h":11,
+                "begin_series":1936
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 9.4,52.27 ]
+            },
+            "properties": {
+                "id":2014,
+                "name":"Hannover",
+                "h":59,
+                "begin_series":1936
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 7.53,54.1 ]
+            },
+            "properties": {
+                "id":2115,
+                "name":"Helgoland",
+                "h":4,
+                "begin_series":1952
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 11.52,50.18 ]
+            },
+            "properties": {
+                "id":2261,
+                "name":"Hof",
+                "h":567,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 11,47.48 ]
+            },
+            "properties": {
+                "id":2290,
+                "name":"Hohenpeißenberg",
+                "h":977,
+                "begin_series":1781
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 8.29,51.11 ]
+            },
+            "properties": {
+                "id":2483,
+                "name":"Kahler Asten",
+                "h":839,
+                "begin_series":1955
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 8.21,49.02 ]
+            },
+            "properties": {
+                "id":2522,
+                "name":"Karlsruhe",
+                "h":112,
+                "begin_series":1876
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 9.26,51.17 ]
+            },
+            "properties": {
+                "id":2532,
+                "name":"Kassel",
+                "h":231,
+                "begin_series":1951
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 10.2,47.43 ]
+            },
+            "properties": {
+                "id":2559,
+                "name":"Kempten",
+                "h":705,
+                "begin_series":1952
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 10.08,54.22 ]
+            },
+            "properties": {
+                "id":2564,
+                "name":"Kiel-Holtenau",
+                "h":31,
+                "begin_series":1986
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 7.09,50.51 ]
+            },
+            "properties": {
+                "id":2667,
+                "name":"Köln-Bonn",
+                "h":92,
+                "begin_series":1957
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 9.11,47.4 ]
+            },
+            "properties": {
+                "id":2712,
+                "name":"Konstanz",
+                "h":443,
+                "begin_series":1972
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 7.49,48.21 ]
+            },
+            "properties": {
+                "id":2812,
+                "name":"Lahr",
+                "h":155,
+                "begin_series":1950
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 12.14,51.26 ]
+            },
+            "properties": {
+                "id":2932,
+                "name":"Leipzig/Halle",
+                "h":131,
+                "begin_series":1972
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 8.07,53.51 ]
+            },
+            "properties": {
+                "id":102,
+                "name":"Leuchtturm Alte Weser",
+                "h":32,
+                "begin_series":1998
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 10.16,54.3 ]
+            },
+            "properties": {
+                "id":2961,
+                "name":"Leuchtturm Kiel",
+                "h":5,
+                "begin_series":1998
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 14.07,52.12 ]
+            },
+            "properties": {
+                "id":3015,
+                "name":"Lindenberg",
+                "h":112,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 8.5,51.47 ]
+            },
+            "properties": {
+                "id":3028,
+                "name":"Lippspringe, Bad",
+                "h":157,
+                "begin_series":1951
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 8.24,55 ]
+            },
+            "properties": {
+                "id":3032,
+                "name":"List/Sylt",
+                "h":26,
+                "begin_series":1937
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 11.35,52.06 ]
+            },
+            "properties": {
+                "id":3126,
+                "name":"Magdeburg",
+                "h":76,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 8.33,49.3 ]
+            },
+            "properties": {
+                "id":5906,
+                "name":"Mannheim",
+                "h":96,
+                "begin_series":1936
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 11.56,53.19 ]
+            },
+            "properties": {
+                "id":3196,
+                "name":"Marnitz",
+                "h":81,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 10.22,50.33 ]
+            },
+            "properties": {
+                "id":3231,
+                "name":"Meiningen",
+                "h":450,
+                "begin_series":1979
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 11.49,48.22 ]
+            },
+            "properties": {
+                "id":1262,
+                "name":"München-Flughafen",
+                "h":444,
+                "begin_series":1992
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 7.42,52.08 ]
+            },
+            "properties": {
+                "id":1766,
+                "name":"Münster/Osnabrück",
+                "h":48,
+                "begin_series":1989
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 12.48,52.54 ]
+            },
+            "properties": {
+                "id":3552,
+                "name":"Neuruppin",
+                "h":38,
+                "begin_series":1961
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 12.85,52.94 ]
+            },
+            "properties": {
+                "id":96,
+                "name":"Neuruppin - Alt Ruppin",
+                "h":50,
+                "begin_series":2019
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 7.09,53.42 ]
+            },
+            "properties": {
+                "id":3631,
+                "name":"Norderney",
+                "h":11,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 6.52,50.22 ]
+            },
+            "properties": {
+                "id":3660,
+                "name":"Nürburg-Barweiler",
+                "h":485,
+                "begin_series":1995
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 11.03,49.3 ]
+            },
+            "properties": {
+                "id":3668,
+                "name":"Nürnberg",
+                "h":314,
+                "begin_series":1955
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 10.16,47.23 ]
+            },
+            "properties": {
+                "id":3730,
+                "name":"Oberstdorf",
+                "h":806,
+                "begin_series":1936
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 8.47,50.05 ]
+            },
+            "properties": {
+                "id":7341,
+                "name":"Offenbach-Wetterpark",
+                "h":119,
+                "begin_series":2005
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 9.31,49.12 ]
+            },
+            "properties": {
+                "id":3761,
+                "name":"Öhringen",
+                "h":276,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 13.03,52.23 ]
+            },
+            "properties": {
+                "id":3987,
+                "name":"Potsdam",
+                "h":81,
+                "begin_series":1893
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 12.06,49.02 ]
+            },
+            "properties": {
+                "id":4104,
+                "name":"Regensburg",
+                "h":365,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 8.2,48.58 ]
+            },
+            "properties": {
+                "id":4177,
+                "name":"Rheinstetten",
+                "h":116,
+                "begin_series":1948
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 12.04,54.01 ]
+            },
+            "properties": {
+                "id":4271,
+                "name":"Rostock-Warnemünde",
+                "h":4,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 7.06,49.12 ]
+            },
+            "properties": {
+                "id":4336,
+                "name":"Saarbrücken/Ensheim",
+                "h":320,
+                "begin_series":1951
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 9.32,54.31 ]
+            },
+            "properties": {
+                "id":4466,
+                "name":"Schleswig",
+                "h":47,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 11.23,53.38 ]
+            },
+            "properties": {
+                "id":4625,
+                "name":"Schwerin",
+                "h":59,
+                "begin_series":1890
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 9.51,48.4 ]
+            },
+            "properties": {
+                "id":4887,
+                "name":"Stötten",
+                "h":734,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 12.33,48.49 ]
+            },
+            "properties": {
+                "id":4911,
+                "name":"Straubing",
+                "h":351,
+                "begin_series":1951
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 9.13,48.41 ]
+            },
+            "properties": {
+                "id":4931,
+                "name":"Stuttgart/Echterdingen",
+                "h":371,
+                "begin_series":1953
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 6.39,49.44 ]
+            },
+            "properties": {
+                "id":5100,
+                "name":"Trier-Petrisberg",
+                "h":265,
+                "begin_series":1937
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 7.27,54.1 ]
+            },
+            "properties": {
+                "id":954,
+                "name":"UFS Deutsche Bucht",
+                "h":0,
+                "begin_series":1998
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 6.21,54.1 ]
+            },
+            "properties": {
+                "id":1228,
+                "name":"UFS TW Ems",
+                "h":0,
+                "begin_series":2000
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 9.56,50.29 ]
+            },
+            "properties": {
+                "id":5371,
+                "name":"Wasserkuppe",
+                "h":921,
+                "begin_series":1936
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 12.11,49.4 ]
+            },
+            "properties": {
+                "id":5397,
+                "name":"Weiden",
+                "h":440,
+                "begin_series":1947
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 12,47.42 ]
+            },
+            "properties": {
+                "id":5467,
+                "name":"Wendelstein",
+                "h":1832,
+                "begin_series":1951
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 9.57,49.46 ]
+            },
+            "properties": {
+                "id":5705,
+                "name":"Würzburg",
+                "h":268,
+                "begin_series":1901
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates":  [ 10.59,47.25 ]
+            },
+            "properties": {
+                "id":5792,
+                "name":"Zugspitze",
+                "h":2960,
+                "begin_series":1900
+            }
+        }
+    ]
+}

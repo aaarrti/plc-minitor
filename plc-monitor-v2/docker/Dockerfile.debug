@@ -1,0 +1,59 @@
+FROM ubuntu
+
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && \
+    apt-get install -y git nano g++ cmake make libspdlog-dev curl libcurl4-openssl-dev \
+    ssh build-essential gcc gdb clang rsync tar python zlib1g-dev libboost-all-dev python3-pip && \
+    apt-get clean
+
+RUN pip3 install dwdweather2
+
+RUN useradd -m user && yes password | passwd user
+RUN usermod -s /bin/bash user
+RUN ( \
+    echo 'LogLevel DEBUG2'; \
+    echo 'PermitRootLogin yes'; \
+    echo 'PasswordAuthentication yes'; \
+    echo 'Subsystem sftp /usr/lib/openssh/sftp-server'; \
+  ) > /etc/ssh/sshd_config_test_clion \
+  && mkdir /run/sshd
+
+WORKDIR /tmp/service/lib/
+# install libconfig
+RUN wget http://hyperrealm.github.io/libconfig/dist/libconfig-1.7.3.tar.gz && \
+    tar -zxvf libconfig-1.7.3.tar.gz && \
+    cd libconfig-1.7.3 && \
+    ./configure && \
+    make && \
+    make install
+# install prometheus-cpp
+RUN git clone https://github.com/jupp0r/prometheus-cpp.git && \
+    cd prometheus-cpp && \
+    git submodule init && git submodule update && \
+    mkdir _build && cd _build && \
+    cmake .. -DBUILD_SHARED_LIBS=ON && \
+    make -j 4 && \
+    mkdir -p deploy && \
+    make DESTDIR=`pwd`/deploy install
+# install oatpp++
+RUN git clone https://github.com/oatpp/oatpp && \
+    cd oatpp/ && \
+    mkdir build && cd build/ &&\
+    cmake .. && \
+    make -j 4 install
+# install swagger ui
+RUN git clone https://github.com/oatpp/oatpp-swagger && \
+    cd oatpp-swagger/ && \
+    mkdir build && cd build/ && \
+    cmake .. && \
+    make -j 4 install
+
+RUN chmod 777 . && cd .. && chmod 777 .
+
+EXPOSE 8081 8082 22
+CMD ["/usr/sbin/sshd", "-D", "-e", "-f", "/etc/ssh/sshd_config_test_clion"]
+
+
+
+
+

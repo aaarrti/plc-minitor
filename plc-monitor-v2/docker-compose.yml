@@ -1,0 +1,69 @@
+services:
+  windturbine:
+    container_name: windturbine
+    image: goofygoof/windturbine-plc:latest
+    ports:
+      - 8080:8080 #UI
+      - 1217:1217 #OPC port to upload PLC application
+    privileged: true
+
+  plc-monitor-v2:
+    container_name: plc-monitor-v2
+    build:
+     context: .
+     dockerfile: docker/Dockerfile.release
+    ports:
+      - 8081:8081
+    environment:
+      - GATEWAY_IP=${DOCKER_GATEWAY_IP}
+      - STARTUP_SLEEP_S=5
+    depends_on:
+      - windturbine
+
+  prometheus:
+    container_name: prometheus
+    image: prom/prometheus
+    volumes:
+      - ${PROMETHEUS_YML_PATH}:/etc/prometheus/prometheus.yml
+    ports:
+      - 9090:9090
+
+  grafana:
+    container_name: grafana
+    image: grafana/grafana
+    ports:
+      - 3000:3000
+    volumes:
+      - grafana_etc:/etc/grafana
+      - grafana_lib:/var/plchandler_lib/grafana
+      - ${GRAFANA_DATASOURCES}:/etc/grafana/provisioning/datasources/automatic.yml:ro
+      - ${GRAFANA_DASHBOARDS_PATH}:/etc/grafana/provisioning/dashboards/automatic.yml:ro
+      - ${GRAFANA_PLC_DASHBOARD_PATH}:/usr/share/grafana/public/dashboards/home.json
+
+  plc-monitor-v2-debug:
+    container_name: plc-monitor-v2
+    build:
+      context: docker
+      dockerfile: Dockerfile.debug
+    ports:
+      - 2222:22
+      - 8081:8081
+      - 8082:8082
+    cap_add:
+      - sys_ptrace
+    environment:
+      - GATEWAY_IP=windturbine
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 500M
+        reservations:
+          cpus: '0.1'
+          memory: 50M
+
+volumes:
+  grafana_lib:
+    driver: local
+  grafana_etc:
+    driver: local
